@@ -4,6 +4,8 @@ import s from './Nav.module.css'
 export const Nav = () => {
     return (
         <div className={s.navContainer}>
+
+
             <ul className={s.navList}>
                 <li className={s.navListItem}>
                     <h4 className={s.navListItemTitle}>Home</h4>
