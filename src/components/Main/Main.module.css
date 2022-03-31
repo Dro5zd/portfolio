@@ -1,0 +1,26 @@
+.mainContainer {
+    display: flex;
+    height: 100vh;
+    /*background-color: #dcbbae;*/
+    /*padding: 80px;*/
+    justify-content: space-between;
+}
+
+.mainPhoto {
+    margin: 80px;
+    height: calc(100vh - 160px);
+    align-content: center;
+    border-radius: 30px;
+    box-shadow: 0 0 7px rgb(0 0 0 / 90%);
+}
+
+.yellowBlock {
+    z-index: -1;
+    background-color: #ffb400;
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: -50%;
+}
