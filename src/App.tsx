@@ -1,24 +1,24 @@
 import React from 'react';
-import './App.css';
 import {Routes, Route} from 'react-router-dom';
-import {Header} from './components/Header/Header';
 import {Main} from './components/Main/Main';
 import {About} from './components/About/About';
-
 import {Contact} from './components/Contact/Contact';
+import {Nav} from './components/Nav/Nav';
+import s from './App.module.css';
+import {Portfolio} from './components/Portfolio/Portfolio';
 
 export function App() {
     return (
-        <div className="App">
+        <div className={s.App}>
+            <div className={s.yellowBlock}/>
             <Main/>
-            <div className="app-wrapper-content">
-                <Routes>
-                    <Route path="/Main/*"
-                           element={<Main/>}/>
-                    <Route path="/news/*" element={<About/>}/>
-                    <Route path="/settings/*" element={<Contact/>}/>
-                </Routes>
-        </div>
+            <Routes>
+                <Route path="/home/*" element={<Main/>}/>
+                <Route path="/about/*" element={<About/>}/>
+                <Route path="/contact/*" element={<Contact/>}/>
+                <Route path="/portfolio/*" element={<Portfolio/>}/>
+            </Routes>
+            <Nav/>
         </div>
     );
 }
