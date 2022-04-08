@@ -4,7 +4,7 @@ import s from './Portfolio.module.css'
 export const Portfolio = () => {
     return (
         <div className={s.portfolioContainer}>
-            PortfolioNew1
+            PortfolioNew12
         </div>
     );
 };
