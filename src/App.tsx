@@ -11,8 +11,8 @@ export function App() {
     return (
         <div className={s.App}>
             <div className={s.yellowBlock}/>
-            <Main/>
             <Routes>
+                <Route path="/" element={<Main/>}/>
                 <Route path="/home/*" element={<Main/>}/>
                 <Route path="/about/*" element={<About/>}/>
                 <Route path="/contact/*" element={<Contact/>}/>
