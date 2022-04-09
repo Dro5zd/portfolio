@@ -8,11 +8,12 @@ import s from './App.module.css';
 import {Portfolio} from './components/Portfolio/Portfolio';
 
 export function App() {
+    const classes = true ? s.themeDark : s.themeWhite;
     return (
-        <div className={s.App}>
-            <div className={s.yellowBlock}/>
+        <div className={`${s.App} ${classes}`}>
+
             <Routes>
-                <Route path="/" element={<Main/>}/>
+                <Route path="/*" element={<Main/>}/>
                 <Route path="/home/*" element={<Main/>}/>
                 <Route path="/about/*" element={<About/>}/>
                 <Route path="/contact/*" element={<Contact/>}/>

@@ -5,6 +5,8 @@ import img from './myPortrait.jpg'
 export const Main = () => {
     return (
         <div className={s.main}>
+            <div className={s.grayCurtain}/>
+            <div className={s.yellowBlock}/>
             <div className={s.container}>
                 <img className={s.mainPhoto} src={img} alt="portrait"/>
                 <div className={s.textContainer}>
@@ -15,9 +17,13 @@ export const Main = () => {
                         experiences, I am passionate about building excellent software that improves the lives of those
                         around
                         me.</p>
-
-
-                    <button>more about me</button>
+                    <div className={s.mainBtn}>
+                        <div className={s.mainBtnTitle}>more about me</div>
+                        <div className={s.mainBtnCircle}>
+                        <img className={s.mainBtnIcon} src="https://img.icons8.com/ios-filled/344/ffffff/right--v1.png"
+                             alt={'home'}/>
+                    </div>
+                    </div>
                 </div>
             </div>
 

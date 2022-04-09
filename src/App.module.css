@@ -3,15 +3,20 @@
     height: 100vh;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--bg);
+
 }
 
-.yellowBlock {
-    z-index: -1;
-    background-color: #ffb400;
-    position: fixed;
-    height: 200%;
-    width: 100%;
-    transform: rotate(-15deg);
-    left: -83%;
-    top: -50%;
+.themeDark {
+    --bg: black;
+    --colorH1: #ffb400
 }
+
+.themeWhite {
+    --bg: white;
+    --colorH1: #43ea0b
+}
+
+
+
+
