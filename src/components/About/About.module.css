@@ -1,6 +1,137 @@
-.headerContainer {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.aboutContainer {
     display: flex;
-    justify-content: flex-end;
-    height: 80px;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100vh;
+    width: 60%;
     background-color: #38c7dc;
 }
+
+header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #dcd438;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background-color: #9c79af;
+}
+
+.personalInfos {
+    display: flex;
+    /*margin: 0 auto;*/
+    justify-content: space-between;
+    /*height: 100vh;*/
+    width: 100%;
+    background-color: #797eaf;
+}
+
+.personalInfosLeft {
+    display: flex;
+    flex-direction: column;
+    /*margin: 0 auto;*/
+    justify-content: space-between;
+    /*height: 100vh;*/
+    width: 40%;
+    background-color: #85d766;
+}
+
+.personalInfosRight {
+    display: flex;
+    flex-direction: column;
+    /*margin: 0 auto;*/
+    justify-content: space-between;
+    /*height: 100vh;*/
+    width: 40%;
+    background-color: #830fe3;
+}
+
+.personalInfosRight {
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+    /*justify-content: space-between;*/
+    /*height: 100vh;*/
+    /*word-wrap: normal;*/
+    width: 300px;
+    background-color: #1532ee;
+}
+
+
+.mainBtn {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    height: 50px;
+    width: 210px;
+    border-radius: 26px;
+    /*background-color: black;*/
+    border: #ffb400 1px solid;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.mainBtnIcon {
+    /*position: relative;*/
+    /*z-index: 2;*/
+    z-index: 5;
+    display: flex;
+    height: 30px;
+
+}
+
+.mainBtnTitle {
+    z-index: 5;
+    display: flex;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 16px
+    /*border-radius: 50px;*/
+    /*border: #ffb400 1px solid;*/
+}
+
+.mainBtnCircle {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    background-color: #ffb400;
+}
+
+.mainBtn:hover::before {
+    transform: translateX(0);
+}
+
+.mainBtn::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110%;
+    height: 110%;
+    background-color: #ffb400;
+    border-radius: 26px;
+    transform: translateX(100%);
+    transition: transform 500ms ease;
+}
+

@@ -21,11 +21,11 @@ export const Main = () => {
                         <div className={s.mainBtn}>
                             <div className={s.mainBtnTitle}>more about me</div>
                             <div className={s.mainBtnCircle}>
-                                <img className={s.mainBtnIcon} src="https://img.icons8.com/ios-filled/344/ffffff/right--v1.png"
+                                <img className={s.mainBtnIcon}
+                                     src="https://img.icons8.com/ios-filled/344/ffffff/right--v1.png"
                                      alt={'home'}/>
                             </div>
-                    </div>
-
+                        </div>
                     </div>
                 </div>
             </div>
