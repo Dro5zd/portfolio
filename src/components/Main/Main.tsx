@@ -8,7 +8,7 @@ export const Main = () => {
             <div className={s.grayCurtain}/>
             <div className={s.yellowBlock}/>
             <div className={s.container}>
-                <img className={s.mainPhoto} src={img} alt="portrait"/>
+                <div className={s.mainPhoto}/>
                 <div className={s.textContainer}>
                     <h1>I'm Drobotyuk Andrii.</h1>
                     <span>Front-end developer</span>
@@ -17,16 +17,18 @@ export const Main = () => {
                         experiences, I am passionate about building excellent software that improves the lives of those
                         around
                         me.</p>
-                    <div className={s.mainBtn}>
-                        <div className={s.mainBtnTitle}>more about me</div>
-                        <div className={s.mainBtnCircle}>
-                        <img className={s.mainBtnIcon} src="https://img.icons8.com/ios-filled/344/ffffff/right--v1.png"
-                             alt={'home'}/>
+                    <div className={s.btnWrapper}>
+                        <div className={s.mainBtn}>
+                            <div className={s.mainBtnTitle}>more about me</div>
+                            <div className={s.mainBtnCircle}>
+                                <img className={s.mainBtnIcon} src="https://img.icons8.com/ios-filled/344/ffffff/right--v1.png"
+                                     alt={'home'}/>
+                            </div>
                     </div>
+
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

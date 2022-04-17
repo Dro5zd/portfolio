@@ -5,6 +5,7 @@
 
 .navContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-right: 40px;
 }
@@ -26,6 +27,10 @@
     border-radius: 25px;
     background: #2b2a2a;
     cursor: pointer;
+}
+
+.navListItemActive > .navIconWrapper{
+    background-color: #ffb400;
 }
 
 .navListItemIcon {
@@ -74,5 +79,32 @@
     opacity: 1;
     padding-right: 55px;
     right: -5px;
+}
+
+
+@media (max-width: 992px) {
+    .navContainer {
+        z-index: 10001;
+        display: flex;
+        flex-direction: row;
+        background-color: #424242;
+        align-items: center;
+        margin-right: 0;
+        position: fixed;
+        bottom: 0;
+        height: 60px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navContainer ul{
+        display: flex;
+    }
+
+    .navListItem:hover .navListItemTitle {
+        opacity: 0;
+        padding-right: 55px;
+        right: -5px;
+    }
 }
 

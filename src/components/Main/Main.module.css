@@ -1,23 +1,27 @@
-.main {
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+}
 
-    /*height: 100vh;*/
-    /*justify-content: space-between;*/
+.main {
+
+
 }
 
 .yellowBlock {
     z-index: 0;
-    background-color: #ffb400;
+    background: var(--coloBlock);
     position: fixed;
     height: 200%;
     width: 100%;
     transform: rotate(-15deg);
     left: -83%;
-    top: -50%;
+    top: -30%;
 }
 
-.container{
-    animation: animationMain 500ms ease;
+.container {
+
+    animation: animationMain 1.2s ease;
     position: relative;
     display: flex;
     margin: 0 auto;
@@ -26,11 +30,15 @@
     /*flex-wrap: wrap;*/
 }
 
+
 .textContainer {
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    /*border: #ff0000 5px solid;*/
+    /*margin-top: 100px;*/
     margin-left: 100px;
     text-align: left;
-    /*justify-content: center;*/
+    justify-content: center;
     /*background-color: #38c7dc;*/
     width: 100%;
     /*height: 500px;*/
@@ -38,8 +46,10 @@
 }
 
 .textContainer h1 {
+    font-family: "Poppins", sans-serif;
     font-size: 50px;
-    font-weight: bold;
+    line-height: 62px;
+    font-weight: 700;
     text-transform: uppercase;
     color: var(--colorH1);
 }
@@ -67,11 +77,17 @@
 /*}*/
 
 
-
 .mainPhoto {
-    height: calc(100vh - 160px);
-    align-content: center;
+    background-image: url('myPortrait.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 1000px;
+    height: calc(100vh - 80px);
+    z-index: 11;
     border-radius: 30px;
+    left: 40px;
+    top: 40px;
     box-shadow: 0 0 7px rgb(0 0 0 / 90%);
 }
 
@@ -92,7 +108,7 @@
 
 }
 
-.mainBtnIcon{
+.mainBtnIcon {
     /*position: relative;*/
     /*z-index: 2;*/
     z-index: 5;
@@ -126,6 +142,7 @@
 .mainBtn:hover::before {
     transform: translateX(0);
 }
+
 .mainBtn::before {
     z-index: 1;
     content: '';
@@ -142,23 +159,25 @@
 
 @keyframes animationMain {
     0% {
+        /*opacity: 0;*/
         transform: translateY(200px);
     }
     100% {
+        /*opacity: 1;*/
         transform: translateY(0);
     }
 }
 
 
 .grayCurtain {
-    animation: animationCurtain 500ms ease forwards;
+    animation: animationCurtain 1s ease forwards;
     z-index: 10000;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: gray;
+    background-color: #424242;
 }
 
 @keyframes animationCurtain {
@@ -167,6 +186,126 @@
     }
     100% {
         transform: translateY(100%);
+    }
+}
+
+@media (max-width: 992px) {
+
+    .main {
+        display: flex;
+        margin: 0 auto;
+        /*padding-top: 100px;*/
+        height: 100vh;
+
+        /*justify-content: center;*/
+    }
+
+    .yellowBlock {
+        opacity: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 100px;
+        height: calc(100vh - 60px);
+        position: relative;
+
+        /*flex-wrap: wrap;*/
+    }
+
+    .mainPhoto {
+        background-image: url('myPortrait.jpg');
+        /*background-position: center center;*/
+        background-size: cover;
+        border-radius: 50%;
+        width: 270px;
+        height: 270px;
+        border: 4px solid #252525;
+        margin: 0 auto 25px;
+        display: block;
+
+    }
+
+    .textContainer {
+        text-align: center;
+        /*background-color: #38c7dc;*/
+        width: 100%;
+        color: white;
+        margin-top: 0;
+        margin-left: 0;
+
+
+    }
+
+    .textContainer h1 {
+        font-size: 38px;
+        line-height: 48px;
+        margin: 29px 0 13px;
+    }
+
+    .textContainer span {
+        font-size: 29px;
+        line-height: 39px;
+        margin: 18px 0 13px;
+        text-transform: uppercase;
+
+    }
+
+    .textContainer p {
+        margin: 10px 0 23px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .mainBtn {
+        display: flex;
+        margin-top: 0;
+        position: relative;
+        height: 50px;
+        width: 210px;
+        border-radius: 26px;
+        border: #ffb400 1px solid;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .btnWrapper {
+        display: flex;
+        /*height: 50px;*/
+        /*border: #ff0000 5px solid;*/
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mainPhoto {
+        width: 230px;
+        height: 230px;
+    }
+
+    .textContainer h1 {
+        font-size: 29px;
+        line-height: 39px;
+        margin: 18px 0 13px;
+    }
+
+    .textContainer span {
+        font-size: 29px;
+        line-height: 39px;
+        margin: 18px 0 13px;
+        text-transform: uppercase;
+
+    }
+
+    .textContainer p {
+        font-size: 14px;
+        line-height: 28px;
     }
 }
 
