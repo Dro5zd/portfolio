@@ -40,7 +40,7 @@
     text-align: left;
     justify-content: center;
     /*background-color: #38c7dc;*/
-    width: 100%;
+    width: 40%;
     /*height: 500px;*/
     color: white;
 }
@@ -82,7 +82,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    width: 1000px;
+    width: 33.33333333%;
     height: calc(100vh - 80px);
     z-index: 11;
     border-radius: 30px;

@@ -1,18 +1,9 @@
-@media screen {
-    
-}
-
-
 .navContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 40px;
 }
-
-/*.navList {*/
-/*    padding: 0;*/
-/*}*/
 
 .navListItem {
     /*opacity: 1;*/
