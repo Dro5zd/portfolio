@@ -14,10 +14,30 @@
 
 header {
     display: flex;
-    height: 100px;
+   
     width: 100%;
     background-color: #dcd438;
     justify-content: center;
+}
+
+h2 {
+    position: relative;
+    font-size: 150px;
+}
+
+h2 span {
+    position: relative;
+    z-index: 1;
+}
+
+h2::before {
+    content: 'RESUME';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: #999;
 }
 
 .container {

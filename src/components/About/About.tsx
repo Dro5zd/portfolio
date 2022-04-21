@@ -6,8 +6,7 @@ export const About = () => {
     return (
         <div className={s.aboutContainer}>
             <header>
-                <h2>RESUME</h2>
-                <h3>ABOUT ME</h3>
+                <h2><span>ABOUT ME</span></h2>
             </header>
             <div className={s.container}>
                 <div className={s.personalInfos}>
