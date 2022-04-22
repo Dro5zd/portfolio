@@ -5,9 +5,8 @@ import {GrayCurtain} from '../GrayCurtain';
 
 export const Main = () => {
     return (
-        <div className={s.main}>
+        <div className={s.mainContainer}>
             <GrayCurtain/>
-            {/*<div className={s.grayCurtain}/>*/}
             <div className={s.yellowBlock}/>
             <div className={s.container}>
                 <div className={s.mainPhotoWrapper}>

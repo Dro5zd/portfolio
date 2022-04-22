@@ -9,7 +9,7 @@ import {Portfolio} from './components/Portfolio/Portfolio';
 
 
 export function App() {
-    const classes = s.themeDark ? s.themeDark : s.themeWhite;
+    const classes = !s.themeDark ? s.themeDark : s.themeWhite;
     return (
         <div className={`${s.App} ${classes}`}>
             <Routes>

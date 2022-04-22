@@ -9,22 +9,20 @@
 }
 
 .navListItem {
-    /*opacity: 1;*/
     width: 50px;
     height: 50px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 1s;
     margin: 20px 0;
-    border-radius: 25px;
-    background: #2b2a2a;
     cursor: pointer;
 }
 
 .navListItemActive > .navIconWrapper {
-    background-color: #ffb400;
+    background-color: var(--colorH1);
+    filter: invert(0);
+}
+
+.navListItemActive > .navIconWrapper > .navListItemIcon {
+    background-color: var(--colorH1);
+    filter: invert(0);
 }
 
 .navListItemIcon {
@@ -34,6 +32,7 @@
     height: 20px;
     align-items: center;
     justify-content: center;
+    filter: var(--filterIconColor)
 }
 
 .navListItemTitle {
@@ -60,13 +59,17 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background: #2b2a2a;
+    background: var(--buttonBG);
     border-radius: 50%;
     transition: background-color 100ms ease;
 }
 
 .navListItem:hover .navIconWrapper {
     background-color: var(--colorH1);
+}
+
+.navListItem:hover .navListItemIcon {
+    filter: invert(0);;
 }
 
 .navListItem:hover .navListItemTitle {
@@ -80,7 +83,7 @@
     .navContainer {
         z-index: 10001;
         flex-direction: row;
-        background-color: #424242;
+        background-color: var(--navbarBG);
         margin-right: 0;
         position: fixed;
         bottom: 0;
