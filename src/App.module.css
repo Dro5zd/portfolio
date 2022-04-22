@@ -1,3 +1,5 @@
+
+
 .App {
     display: flex;
     min-height: 100vh;
@@ -8,6 +10,7 @@
 
 .themeDark {
     --bg: black;
+    /*--bgPhoto: url('/components/Main/myPortrait.jpg');*/
     --curtainColor: #424242;
     --titleBGColor: hsla(0,0%,100%,.15);
     --textColor: white;
@@ -20,6 +23,7 @@
 
 .themeWhite {
     --bg: #f3f3f3;
+    /*--bgPhoto: url('/components/Main/myPortrait.jpg');*/
     --curtainColor: #e7e4e4;
     --titleBGColor: rgba(30,37,48,.07);
     --textColor: #666666;
