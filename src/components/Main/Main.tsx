@@ -1,11 +1,13 @@
 import React from 'react';
 import s from './Main.module.css'
 import img from './myPortrait.jpg'
+import {GrayCurtain} from '../GrayCurtain';
 
 export const Main = () => {
     return (
         <div className={s.main}>
-            <div className={s.grayCurtain}/>
+            <GrayCurtain/>
+            {/*<div className={s.grayCurtain}/>*/}
             <div className={s.yellowBlock}/>
             <div className={s.container}>
                 <div className={s.mainPhotoWrapper}>
@@ -15,7 +17,7 @@ export const Main = () => {
 
 
                 <div className={s.textContainer}>
-                    <h1>I'm Drobotyuk Andrii.</h1>
+                    <h2>I'm Drobotyuk Andrii.</h2>
                     <span>Front-end developer</span>
                     <p>I'm a Ukrainian based web designer & front‑end developer focused on crafting clean &
                         user‑friendly

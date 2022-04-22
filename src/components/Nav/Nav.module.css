@@ -1,4 +1,7 @@
 .navContainer {
+    position: fixed;
+    right: 0;
+    bottom: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +23,7 @@
     cursor: pointer;
 }
 
-.navListItemActive > .navIconWrapper{
+.navListItemActive > .navIconWrapper {
     background-color: #ffb400;
 }
 
@@ -38,11 +41,11 @@
     display: flex;
     border-radius: 25px;
     align-items: center;
-   justify-content: center;
-    margin-right: 50px;
+    justify-content: center;
+    margin-right: 5px;
     color: white;
     height: 50px;
-    background-color: #ffb400;
+    background-color: var(--colorH1);
     padding-left: 10px;
     opacity: 0;
     transition: padding-right 100ms ease, right 100ms ease, opacity 100ms ease;
@@ -63,7 +66,7 @@
 }
 
 .navListItem:hover .navIconWrapper {
-    background-color: #ffb400;
+    background-color: var(--colorH1);
 }
 
 .navListItem:hover .navListItemTitle {
@@ -86,7 +89,7 @@
         justify-content: space-around;
     }
 
-    .navContainer ul{
+    .navContainer ul {
         display: flex;
     }
 

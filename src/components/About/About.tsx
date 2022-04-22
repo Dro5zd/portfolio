@@ -1,14 +1,17 @@
 import React from 'react';
 import s from './About.module.css'
 import img from '../Main/myPortrait.jpg';
+import {GrayCurtain} from '../GrayCurtain';
 
 export const About = () => {
     return (
         <div className={s.aboutContainer}>
-            <header>
-                <h2><span>ABOUT ME</span></h2>
-            </header>
-            <div className={s.container}>
+            <GrayCurtain/>
+            <div className={s.aboutWrapper}>
+                <header>
+                    <h1>ABOUT<span> ME</span></h1>
+                    <span className={s.titleBG}>RESUME</span>
+                </header>
                 <div className={s.personalInfos}>
                     <div className={s.personalInfosLeft}>
                         <h3>PERSONAL INFO</h3>

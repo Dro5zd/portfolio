@@ -1,6 +1,58 @@
 .contactContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.contactWrapper {
+    animation: animationMain 1.2s ease;
+    position: relative;
     display: flex;
-    justify-content: flex-end;
-    height: 80px;
-    background-color: #38c7dc;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    /*background-color: #ef7f0e;*/
+}
+
+header {
+    display: flex;
+    position: relative;
+    padding: 80px 0;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+h1 span {
+    position: relative;
+    z-index: 1;
+    color: var(--colorH1);
+}
+
+.titleBG {
+    font-size: 110px;
+    letter-spacing: 10px;
+    line-height: .7;
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 900;
+    transform: translateY(-50%);
+    color: hsla(0,0%,100%,.15);
+}
+
+@keyframes animationMain {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
