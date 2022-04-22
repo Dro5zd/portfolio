@@ -37,7 +37,6 @@
     font-size: 50px;
     line-height: 62px;
     font-weight: 900;
-    letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--colorH1);
 }
@@ -58,6 +57,7 @@
 .mainPhotoWrapper {
     position: relative;
     width: 33.33333333%;
+
 }
 
 .mainPhoto {
@@ -85,6 +85,7 @@
     border: 2px solid var(--colorH1);
     font-size: 20px;
     cursor: pointer;
+
 }
 
 .mainBtnIcon {
@@ -100,7 +101,7 @@
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 16px
+    padding: 16px;
 }
 
 .mainBtnCircle {
@@ -169,7 +170,7 @@
 
 @media (max-width: 992px) {
     .yellowBlock {
-        opacity: 0;
+        display: none;
     }
 
     .container {
@@ -210,6 +211,7 @@
 
     .textContainer {
         text-align: center;
+        align-items: center;
         width: 100%;
         margin-top: 0;
         margin-left: 0;

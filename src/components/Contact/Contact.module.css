@@ -58,3 +58,31 @@ h1 span {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 576px) {
+    .titleBG {
+        display: none;
+    }
+
+    .contactContainer {
+        width: 100%;
+        /*height: 100%;*/
+        /*background-color: #0eefdc;*/
+    }
+
+    .contactWrapper {
+        width: 90%;
+        /*background-color: #ef7f0e;*/
+    }
+
+    header {
+        width: 100%;
+        padding: 80px 0;
+        justify-content: left;
+    }
+
+    header h1 {
+        font-size: 35px;
+        font-weight: 900;
+    }
+}
