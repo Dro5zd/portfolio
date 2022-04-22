@@ -8,6 +8,7 @@ export const Main = () => {
         <div className={s.mainContainer}>
             <GrayCurtain/>
             <div className={s.yellowBlock}/>
+
             <div className={s.container}>
                 <div className={s.mainPhotoWrapper}>
                     <div className={s.mainPhoto}/>
