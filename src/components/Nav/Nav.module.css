@@ -1,14 +1,20 @@
-.navContainer {
+
+.navbar {
     position: fixed;
-    right: 0;
-    bottom: 280px;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.navContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 40px;
 }
 
 .navListItem {
+    position: relative;
     width: 50px;
     height: 50px;
     margin: 20px 0;
@@ -80,16 +86,32 @@
 
 
 @media (max-width: 992px) {
-    .navContainer {
+    .navbar {
         z-index: 10001;
+        display: flex;
+        padding: 10px 0;
         flex-direction: row;
-        background-color: var(--navbarBG);
-        margin-right: 0;
-        position: fixed;
+        top: unset;
         bottom: 0;
-        height: 60px;
+        transform: unset;
+        right: unset;
         width: 100%;
+        background-color: var(--navbarBG);
+        /*height: 60px;*/
         justify-content: space-around;
+    }
+
+    .navContainer {
+
+        /*flex-direction: row;*/
+        /*background-color: var(--navbarBG);*/
+        margin-right: 0;
+        /*width: 100%;*/
+        /*justify-content: space-around;*/
+    }
+    .navListItem {
+        margin: unset;
+
     }
 
     .navContainer ul {

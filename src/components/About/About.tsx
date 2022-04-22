@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './About.module.css'
-import img from '../Main/myPortrait.jpg';
 import {GrayCurtain} from '../GrayCurtain';
+import {Button} from '../Button/Button';
 
 export const About = () => {
     return (
@@ -17,27 +17,18 @@ export const About = () => {
                         <h3>PERSONAL INFO</h3>
                         <div className="mainInfo">
                             <ul>
-                                <li>First Name: Steve</li>
-                                <li>Last Name: Milner</li>
-                                <li> Age: 27 Years</li>
-                                <li>Nationality: Tunisian</li>
+                                <li>First Name: Andrii</li>
+                                <li>Last Name: Drobotyuk</li>
+                                <li> Age: 40 Years</li>
+                                <li>Nationality: Ukrainian</li>
                                 <li>Freelance: Available</li>
-                                <li>Address: Tunis</li>
-                                <li>Phone: +21621184010</li>
-                                <li>Email: you@mail.com</li>
+                                <li>Address: Kyiv</li>
+                                <li>Phone: +380936888885</li>
+                                <li>Email: adrobotyuk@gmail.com</li>
                                 <li>Skype: steve.milner</li>
-                                <li>Langages: French, English</li>
+                                <li>Languages: Ukrainian, English, russian</li>
                             </ul>
-                            <div className={s.btnWrapper}>
-                                <div className={s.mainBtn}>
-                                    <div className={s.mainBtnTitle}>more about me</div>
-                                    <div className={s.mainBtnCircle}>
-                                        <img className={s.mainBtnIcon}
-                                             src="https://img.icons8.com/ios-filled/344/ffffff/right--v1.png"
-                                             alt={'home'}/>
-                                    </div>
-                                </div>
-                            </div>
+                            <Button/>
                         </div>
 
                     </div>

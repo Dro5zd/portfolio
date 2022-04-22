@@ -1,0 +1,19 @@
+.grayCurtain {
+    animation: animationCurtain 1s ease forwards;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--curtainColor);
+}
+
+@keyframes animationCurtain {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}

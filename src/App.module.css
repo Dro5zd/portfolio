@@ -10,7 +10,7 @@
 
 .themeDark {
     --bg: black;
-    /*--bgPhoto: url('/components/Main/myPortrait.jpg');*/
+    --bgPhoto: url('./components/Main/myPortrait.jpg');
     --curtainColor: #424242;
     --titleBGColor: hsla(0,0%,100%,.15);
     --textColor: white;
@@ -23,7 +23,7 @@
 
 .themeWhite {
     --bg: #f3f3f3;
-    /*--bgPhoto: url('/components/Main/myPortrait.jpg');*/
+    --bgPhoto: url('./components/Main/myPortret2.jpeg');
     --curtainColor: #e7e4e4;
     --titleBGColor: rgba(30,37,48,.07);
     --textColor: #666666;

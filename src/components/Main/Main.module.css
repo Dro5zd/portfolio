@@ -61,7 +61,7 @@
 }
 
 .mainPhoto {
-    background-image: url('myPortrait.jpg');
+    background-image: var(--bgPhoto);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -72,105 +72,28 @@
     box-shadow: 0 0 7px rgb(0 0 0 / 90%);
 }
 
-.mainBtn {
-    overflow: hidden;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    height: 50px;
-    width: 210px;
-    border-radius: 28px;
-    border: 2px solid var(--colorH1);
-    font-size: 20px;
-    cursor: pointer;
-
-}
-
-.mainBtnIcon {
-    z-index: 5;
-    display: flex;
-    height: 30px;
-}
-
-.mainBtnTitle {
-    z-index: 5;
-    display: flex;
-    color: var(--textColor);
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 16px;
-}
-
-.mainBtnCircle {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 52px;
-    width: 52px;
-    border-radius: 50%;
-    background-color: var(--colorH1);
-}
-
-.mainBtn:hover > .mainBtnTitle {
-    color: #ffffff;
-    /*filter: invert(1);*/
-}
-
-.mainBtn:hover::before {
-    transform: translateX(0);
-}
-
-.mainBtn::before {
-    z-index: 1;
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 110%;
-    height: 110%;
-    background-color: var(--colorH1);
-    border-radius: 26px;
-    transform: translateX(100%);
-    transition: transform 500ms ease;
-}
-
-.grayCurtain {
-    animation: animationCurtain 1s ease forwards;
-    z-index: 10000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: var(--curtainColor);
+.link {
+    align-self: flex-start;
 }
 
 @keyframes animationMain {
     0% {
-        opacity: 0;
+        /*opacity: 0;*/
         transform: translateY(200px);
     }
     100% {
-        opacity: 1;
+        /*opacity: 1;*/
         transform: translateY(0);
-    }
-}
-
-@keyframes animationCurtain {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(100%);
     }
 }
 
 @media (max-width: 992px) {
     .yellowBlock {
         display: none;
+    }
+
+    .link {
+        align-self: center;
     }
 
     .container {
@@ -231,26 +154,6 @@
         margin-bottom: 23px;
         font-size: 15px;
         line-height: 30px;
-    }
-
-    .mainBtn {
-        display: flex;
-        margin-top: 0;
-        position: relative;
-        height: 50px;
-        width: 210px;
-        border-radius: 26px;
-        border: 2px solid var(--colorH1);
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .btnWrapper {
-        display: flex;
-        width: 100%;
-        align-content: center;
-        justify-content: center;
-        margin-bottom: 20px;
     }
 }
 
