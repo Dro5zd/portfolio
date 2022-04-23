@@ -8,7 +8,6 @@ import s from './App.module.css';
 import {Portfolio} from './components/Portfolio/Portfolio';
 import img from './components/Main/myPortrait.jpg';
 
-
 export function App() {
     const [mode, setMode] = useState<boolean>(true)
     const onChangeThemeHandler = () => {
@@ -29,7 +28,7 @@ export function App() {
                 <Route path="/home/*" element={<Main/>}/>
                 <Route path="/about/*" element={<About/>}/>
                 <Route path="/contact/*" element={<Contact/>}/>
-                <Route path="/portfolio/*" element={<Portfolio/>}/>
+                <Route path="/my_portfolio/*" element={<Portfolio/>}/>
             </Routes>
             <div className={s.switcherBtn}>
                 <img className={s.mainBtnIcon}

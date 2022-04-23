@@ -9,6 +9,7 @@ type NavbarRowPropsType = {
 }
 
 export const NavbarRow = (props: NavbarRowPropsType) => {
+
     return (
         <div className={s.navContainer}>
             <NavLink to={props.path} className={navData => navData.isActive ? `${s.navListItemActive} ${s.navListItem}` : s.navListItem}>
